@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Nitro Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="icon" href="./assets/favicon.png" type="image/png">
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="container">
+        <div class="title">
+            <img src="./assets/nitro.gif" alt="Nitro" class="icon">
+            <h1>Fake Nitro Generator</h1>
+            <img src="./assets/nitro.gif" alt="Nitro" class="icon">
+        </div>
+        <div class="controls">
+            <input type="number" id="count" min="1" max="100" value="1">
+            <button id="gift-btn" onclick="setType('gift')">Gift</button>
+            <button id="promo-btn" onclick="setType('promo')">Promo</button>
+            <button onclick="generateLinks()">Generate</button>
+        </div>
+        <p id="selected-type">Selected: <span>None</span></p>
+        <div class="output" id="output"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
